@@ -73,6 +73,12 @@
     <Compile Include="frmAccounts.Designer.cs">
       <DependentUpon>frmAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrimaryAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimaryAccounts.Designer.cs">
+      <DependentUpon>frmPrimaryAccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\CLS_Accounts.cs" />
     <Compile Include="Presentation\CLS_BOUND.cs" />
     <Compile Include="Presentation\CLS_Bounds.cs" />
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmItems.resx">
       <DependentUpon>frmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimaryAccounts.resx">
+      <DependentUpon>frmPrimaryAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
