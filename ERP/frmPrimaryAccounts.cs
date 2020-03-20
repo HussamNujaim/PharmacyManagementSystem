@@ -51,8 +51,12 @@ namespace ERP
                 txtAddName.Text = "";
                 lstAddInterfaces.UnCheckAll();
                 sqlDataSource1.Fill();
-
             }
+        }
+
+        private void dgv_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
