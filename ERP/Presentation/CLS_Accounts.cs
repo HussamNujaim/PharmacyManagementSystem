@@ -65,7 +65,7 @@ namespace ERP.Presentation
                 DataLayer.DataLayer DataLayer = new DataLayer.DataLayer();
                 DataLayer.open();
                 SqlParameter[] para = new SqlParameter[2];
-                para[0] = new SqlParameter("@Id", SqlDbType.Int);
+                para[0] = new SqlParameter("@id", SqlDbType.Int);
                 para[0].Value = id;
                 para[1] = new SqlParameter("@name", SqlDbType.NVarChar, 50);
                 para[1].Value = Name;
