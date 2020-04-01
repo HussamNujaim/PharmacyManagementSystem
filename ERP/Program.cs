@@ -16,7 +16,7 @@ namespace ERP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrimaryAccounts());
+            Application.Run(new frmAccounts());
         } 
     }
 }

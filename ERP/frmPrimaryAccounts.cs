@@ -52,7 +52,6 @@ namespace ERP
                 lstAddInterfaces.UnCheckAll();
                 //sqlDataSource1.Fill();
                 dgv.DataSource = acc.Get_PrimaryAccounts();
-
             }
         }
 
