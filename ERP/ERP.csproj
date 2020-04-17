@@ -67,11 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyInfo.cs" />
     <Compile Include="frmAccounts.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAccounts.Designer.cs">
       <DependentUpon>frmAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCashbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashbooks.Designer.cs">
+      <DependentUpon>frmCashbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeposition.Designer.cs">
+      <DependentUpon>frmDeposition.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrimaryAccounts.cs">
       <SubType>Form</SubType>
@@ -121,22 +134,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoresDataSet.cs">
+      <DependentUpon>StoresDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StoresDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StoresDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="StoresDataSet_1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoresDataSet_1.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="ToWord.cs" />
     <EmbeddedResource Include="frmAccounts.resx">
       <DependentUpon>frmAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCashbooks.resx">
+      <DependentUpon>frmCashbooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCurrency.resx">
       <DependentUpon>frmCurrency.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeposition.resx">
+      <DependentUpon>frmDeposition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmItems.resx">
       <DependentUpon>frmItems.cs</DependentUpon>
@@ -173,17 +191,6 @@
     </None>
     <None Include="StoresDataSet.xss">
       <DependentUpon>StoresDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="StoresDataSet_1.xsc">
-      <DependentUpon>StoresDataSet_1.xsd</DependentUpon>
-    </None>
-    <None Include="StoresDataSet_1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StoresDataSet_1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StoresDataSet_1.xss">
-      <DependentUpon>StoresDataSet_1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -36,10 +36,12 @@ namespace ERP
 
         private void frmAccounts_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'GetCurrencies.Get_PrimaryAccounts' table. You can move, or remove it, as needed.
+            this.get_PrimaryAccountsTableAdapter.Fill(this.GetCurrencies.Get_PrimaryAccounts);
             // TODO: This line of code loads data into the 'storesDataSet.Get_Currencies' table. You can move, or remove it, as needed.
             this.get_CurrenciesTableAdapter.Fill(this.GetCurrencies.Get_Currencies);
             // TODO: This line of code loads data into the 'storesDataSet_1.Get_PrimaryAccounts' table. You can move, or remove it, as needed.
-            this.get_PrimaryAccountsTableAdapter.Fill(this.GetPrimaryAccounts.Get_PrimaryAccounts);
+           // this.get_PrimaryAccountsTableAdapter.Fill(this.GetPrimaryAccounts.Get_PrimaryAccounts);
 
         }
 

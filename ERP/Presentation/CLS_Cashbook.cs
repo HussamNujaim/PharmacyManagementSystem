@@ -9,10 +9,10 @@ namespace ERP.Presentation
 {
     class CLS_Cashbook
     {
-        public void Add_Cashbook(string name, string details, int currency, decimal initBalance, DataLayer.DataLayer DataLayer)
+        public void Add_Cashbook(string name, string details, int currency, decimal initBalance, int isMain, DataLayer.DataLayer DataLayer)
         {
 
-            SqlParameter[] para = new SqlParameter[4];
+            SqlParameter[] para = new SqlParameter[5];
             para[0] = new SqlParameter("@name", SqlDbType.NVarChar, 50);
             para[0].Value = name;
             para[1] = new SqlParameter("@details", SqlDbType.NVarChar, 100);
@@ -21,7 +21,9 @@ namespace ERP.Presentation
             para[2].Value = currency;
             para[3] = new SqlParameter("@initialBalance", SqlDbType.Decimal);
             para[3].Value = initBalance;
-            string sql = "INSERT INTO [dbo].[Cashbooks] ([name] ,[details] ,[Palance] , [Currency] , [initialBalance])  VALUES (@name,@details,@initialBalance,@currency ,@initialBalance)";
+            para[4] = new SqlParameter("@isMain", SqlDbType.TinyInt);
+            para[4].Value = isMain;
+            string sql = "INSERT INTO [dbo].[Cashbooks] ([name] ,[details] ,[Palance] , [Currency] , [initialBalance], [isMain])  VALUES (@name,@details,@initialBalance,@currency ,@initialBalance,@isMain)";
             DataLayer.ExecuteCommand_offline(sql, para);
         }
 

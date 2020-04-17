@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery3 = new DevExpress.DataAccess.Sql.StoredProcQuery();
-            DevExpress.DataAccess.Sql.QueryParameter queryParameter3 = new DevExpress.DataAccess.Sql.QueryParameter();
+            DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
+            DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccounts));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.dgv = new System.Windows.Forms.DataGridView();
@@ -53,7 +53,6 @@
             this.GetCurrencies = new ERP.StoresDataSet();
             this.cmbAddPrimaryAccount = new DevExpress.XtraEditors.LookUpEdit();
             this.getPrimaryAccountsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.GetPrimaryAccounts = new ERP.StoresDataSet_1();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -79,12 +78,13 @@
             this.txtEditAccDetails = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtEditAccName = new DevExpress.XtraEditors.TextEdit();
-            this.get_PrimaryAccountsTableAdapter = new ERP.StoresDataSet_1TableAdapters.Get_PrimaryAccountsTableAdapter();
             this.get_CurrenciesTableAdapter = new ERP.StoresDataSetTableAdapters.Get_CurrenciesTableAdapter();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.cmbSearchPrimaryAcc = new DevExpress.XtraEditors.LookUpEdit();
             this.txtSearch = new DevExpress.XtraEditors.TextEdit();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.get_PrimaryAccountsTableAdapter = new ERP.StoresDataSetTableAdapters.Get_PrimaryAccountsTableAdapter();
+            this.getPrimaryAccountsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -102,7 +102,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GetCurrencies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAddPrimaryAccount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getPrimaryAccountsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GetPrimaryAccounts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddAccDetails.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddAccName.Properties)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
@@ -119,20 +118,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtEditAccName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSearchPrimaryAcc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getPrimaryAccountsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // sqlDataSource1
             // 
             this.sqlDataSource1.ConnectionName = "ERP.Properties.Settings.ERP";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery3.Name = "Get_SecondaryAccounts";
-            queryParameter3.Name = "@fatherAccount";
-            queryParameter3.Type = typeof(int);
-            queryParameter3.ValueInfo = "0";
-            storedProcQuery3.Parameters.Add(queryParameter3);
-            storedProcQuery3.StoredProcName = "Get_SecondaryAccounts";
+            storedProcQuery1.Name = "Get_SecondaryAccounts";
+            queryParameter1.Name = "@fatherAccount";
+            queryParameter1.Type = typeof(int);
+            queryParameter1.ValueInfo = "0";
+            storedProcQuery1.Parameters.Add(queryParameter1);
+            storedProcQuery1.StoredProcName = "Get_SecondaryAccounts";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            storedProcQuery3});
+            storedProcQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // panelControl1
@@ -148,31 +148,31 @@
             this.dgv.AllowUserToAddRows = false;
             this.dgv.AllowUserToDeleteRows = false;
             this.dgv.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv.GridColor = System.Drawing.SystemColors.Control;
             this.dgv.Location = new System.Drawing.Point(2, 2);
@@ -180,21 +180,21 @@
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(522, 389);
             this.dgv.StandardTab = true;
@@ -341,7 +341,7 @@
             this.cmbAddPrimaryAccount.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("name", "name", 62, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 25, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.cmbAddPrimaryAccount.Properties.DataSource = this.getPrimaryAccountsBindingSource;
+            this.cmbAddPrimaryAccount.Properties.DataSource = this.getPrimaryAccountsBindingSource1;
             this.cmbAddPrimaryAccount.Properties.DisplayMember = "name";
             this.cmbAddPrimaryAccount.Properties.NullText = "";
             this.cmbAddPrimaryAccount.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
@@ -356,12 +356,7 @@
             // getPrimaryAccountsBindingSource
             // 
             this.getPrimaryAccountsBindingSource.DataMember = "Get_PrimaryAccounts";
-            this.getPrimaryAccountsBindingSource.DataSource = this.GetPrimaryAccounts;
-            // 
-            // GetPrimaryAccounts
-            // 
-            this.GetPrimaryAccounts.DataSetName = "GetPrimaryAccounts";
-            this.GetPrimaryAccounts.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.getPrimaryAccountsBindingSource.DataSource = this.GetCurrencies;
             // 
             // labelControl3
             // 
@@ -566,7 +561,7 @@
             this.cmbEditPrimaryAcc.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("name", "name", 62, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 25, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.cmbEditPrimaryAcc.Properties.DataSource = this.getPrimaryAccountsBindingSource;
+            this.cmbEditPrimaryAcc.Properties.DataSource = this.getPrimaryAccountsBindingSource1;
             this.cmbEditPrimaryAcc.Properties.DisplayMember = "name";
             this.cmbEditPrimaryAcc.Properties.NullText = "";
             this.cmbEditPrimaryAcc.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
@@ -667,10 +662,6 @@
             this.txtEditAccName.Size = new System.Drawing.Size(230, 26);
             this.txtEditAccName.TabIndex = 2;
             // 
-            // get_PrimaryAccountsTableAdapter
-            // 
-            this.get_PrimaryAccountsTableAdapter.ClearBeforeFill = true;
-            // 
             // get_CurrenciesTableAdapter
             // 
             this.get_CurrenciesTableAdapter.ClearBeforeFill = true;
@@ -732,6 +723,15 @@
             this.labelControl15.TabIndex = 12;
             this.labelControl15.Text = "بحث";
             // 
+            // get_PrimaryAccountsTableAdapter
+            // 
+            this.get_PrimaryAccountsTableAdapter.ClearBeforeFill = true;
+            // 
+            // getPrimaryAccountsBindingSource1
+            // 
+            this.getPrimaryAccountsBindingSource1.DataMember = "Get_PrimaryAccounts";
+            this.getPrimaryAccountsBindingSource1.DataSource = this.GetCurrencies;
+            // 
             // frmAccounts
             // 
             this.Appearance.Options.UseFont = true;
@@ -770,7 +770,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GetCurrencies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAddPrimaryAccount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getPrimaryAccountsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GetPrimaryAccounts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddAccDetails.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddAccName.Properties)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
@@ -789,6 +788,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtEditAccName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSearchPrimaryAcc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getPrimaryAccountsBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,9 +833,9 @@
         private DevExpress.XtraEditors.TextEdit txtEditCredit;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private StoresDataSet_1 GetPrimaryAccounts;
+        //private StoresDataSet_1 GetPrimaryAccounts;
         private System.Windows.Forms.BindingSource getPrimaryAccountsBindingSource;
-        private StoresDataSet_1TableAdapters.Get_PrimaryAccountsTableAdapter get_PrimaryAccountsTableAdapter;
+        //private StoresDataSet_1TableAdapters.Get_PrimaryAccountsTableAdapter get_PrimaryAccountsTableAdapter;
         private StoresDataSet GetCurrencies;
         private System.Windows.Forms.BindingSource getCurrenciesBindingSource;
         private StoresDataSetTableAdapters.Get_CurrenciesTableAdapter get_CurrenciesTableAdapter;
@@ -843,5 +843,7 @@
         private DevExpress.XtraEditors.LookUpEdit cmbSearchPrimaryAcc;
         private DevExpress.XtraEditors.TextEdit txtSearch;
         private DevExpress.XtraEditors.LabelControl labelControl15;
+        private StoresDataSetTableAdapters.Get_PrimaryAccountsTableAdapter get_PrimaryAccountsTableAdapter;
+        private System.Windows.Forms.BindingSource getPrimaryAccountsBindingSource1;
     }
 }
