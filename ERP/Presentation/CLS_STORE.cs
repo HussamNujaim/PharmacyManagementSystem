@@ -9,7 +9,31 @@ namespace ERP.Presentation
 {
     class CLS_STORE
     {
-        public void Add_Store(int ItemID, double Qty, decimal PurchasePrice,DataLayer.DataLayer DataLayer)
+        public void Add_Store(string name, string location, string details, int isMain, DataLayer.DataLayer DataLayer)
+        {
+            SqlParameter[] para = new SqlParameter[4];
+            para[0] = new SqlParameter("@name", SqlDbType.NVarChar, 50);
+            para[0].Value = name;
+            para[1] = new SqlParameter("@location", SqlDbType.NVarChar, 50);
+            para[1].Value = location;
+            para[2] = new SqlParameter("@details", SqlDbType.NVarChar,100);
+            para[2].Value = details;
+            para[3] = new SqlParameter("@isMain", SqlDbType.TinyInt);
+            para[3].Value = isMain;
+            string sqlCommand = " INSERT INTO  [dbo].[Stores]([name] ,[location],[details],[isMain]) VALUES (@name ,@location ,@details,@isMain )";
+            DataLayer.ExecuteCommand_offline(sqlCommand, para);
+        }
+        public DataTable Get_Stores(DataLayer.DataLayer DataLayer)
+        {
+            return DataLayer.SelectData_offline("SELECT [Id],[name] ,[location], [details], [isMain] FROM [dbo].[Stores]", null);
+        }
+        public DataTable Get_Stores()
+        {
+            DataLayer.DataLayer DataLayer = new DataLayer.DataLayer();
+            return DataLayer.SelectData("Get_Stores", null);
+        }
+
+        public void Add_ItemToStore(int ItemID, double Qty, decimal PurchasePrice,DataLayer.DataLayer DataLayer)
         {
                 SqlParameter[] para = new SqlParameter[3];
                 para[0] = new SqlParameter("@ItemID", SqlDbType.Int);
@@ -23,7 +47,8 @@ namespace ERP.Presentation
                 DataLayer.ExecuteCommand_offline(sqlCommand, para);
         }
 
-        public void Update_Store(int ItemID, double Qty, decimal PurchasePrice, DataLayer.DataLayer DataLayer)
+
+        public void Update_ItemInStore(int ItemID, double Qty, decimal PurchasePrice, DataLayer.DataLayer DataLayer)
         {
             SqlParameter[] para = new SqlParameter[3];
             para[0] = new SqlParameter("@ItemID", SqlDbType.Int);
@@ -36,7 +61,7 @@ namespace ERP.Presentation
             string sqlCommand = "UPDATE  [dbo].[Store] SET [Qty] = @Qty,[PurchasePrice] = @PurchasePrice WHERE [ItemID]=@ItemID ";
             DataLayer.ExecuteCommand_offline(sqlCommand, para);
         }
-        public void Update_Store(int ItemID, double Qty, DataLayer.DataLayer DataLayer)
+        public void Update_ItemInStore(int ItemID, double Qty, DataLayer.DataLayer DataLayer)
         {
             SqlParameter[] para = new SqlParameter[2];
             para[0] = new SqlParameter("@ItemID", SqlDbType.Int);
@@ -66,20 +91,20 @@ namespace ERP.Presentation
             return DataLayer.SelectDataR("get_Items_All_EndDate", para);
         }
 
-        public SqlDataReader get_all_store()
+        public SqlDataReader get_all_items_in_store()
         {
             DataLayer.DataLayer DataLayer = new DataLayer.DataLayer();
             SqlDataReader dr;
             dr = DataLayer.SelectDataR("get_all_store", null);
             return dr;
         }
-        public DataTable get_all_storeT()
+        public DataTable get_all_items_in_storeT()
         {
             DataLayer.DataLayer DataLayer = new DataLayer.DataLayer();
             return DataLayer.SelectData("get_all_store", null);
         }
 
-        public SqlDataReader get_store()
+        public SqlDataReader get_items_in_store()
         {
             DataLayer.DataLayer DataLayer = new DataLayer.DataLayer();
             SqlDataReader dr;

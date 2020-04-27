@@ -43,23 +43,23 @@
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDeposition = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPayment = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
             this.btnItems = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnStores = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAccounts = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPrimaryAccounts = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCashbooks = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
@@ -88,6 +88,7 @@
             this.barButtonItem58 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem59 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem60 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCurrencies = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -122,10 +123,8 @@
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.button1 = new System.Windows.Forms.Button();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnInitCurrency = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,23 +147,23 @@
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15,
-            this.barButtonItem16,
+            this.btnDeposition,
             this.barButtonItem17,
-            this.barButtonItem18,
+            this.btnPayment,
             this.barButtonItem19,
             this.barButtonItem20,
             this.barButtonItem21,
             this.btnItems,
             this.barButtonItem23,
             this.barButtonItem24,
-            this.barButtonItem25,
+            this.btnStores,
             this.barButtonItem26,
             this.barButtonItem27,
-            this.barButtonItem28,
-            this.barButtonItem29,
+            this.btnAccounts,
+            this.btnPrimaryAccounts,
             this.barButtonItem30,
             this.barButtonItem31,
-            this.barButtonItem32,
+            this.btnCashbooks,
             this.barButtonItem33,
             this.barButtonItem34,
             this.barButtonItem35,
@@ -193,7 +192,7 @@
             this.barButtonItem58,
             this.barButtonItem59,
             this.barButtonItem60,
-            this.btnInitCurrency});
+            this.btnCurrencies});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(4);
             this.ribbon.MaxItemId = 60;
@@ -209,63 +208,49 @@
             this.ribbonPage13,
             this.ribbonPage5,
             this.ribbonPage6});
-            this.ribbon.Size = new System.Drawing.Size(1032, 162);
+            this.ribbon.Size = new System.Drawing.Size(1032, 143);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "فاتورة مبيعات";
             this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             // 
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "الفواتير السابقة";
             this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
             this.barButtonItem2.Name = "barButtonItem2";
             // 
             // barButtonItem3
             // 
             this.barButtonItem3.Caption = "فاتورة مرتجع جديدة";
             this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
             this.barButtonItem3.Name = "barButtonItem3";
             // 
             // barButtonItem4
             // 
             this.barButtonItem4.Caption = "فواتير المرتجع السابقة";
             this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
             this.barButtonItem4.Name = "barButtonItem4";
             // 
             // barButtonItem7
             // 
             this.barButtonItem7.Caption = "فواتير المرتجع السابقة";
             this.barButtonItem7.Id = 5;
-            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
             this.barButtonItem7.Name = "barButtonItem7";
             // 
             // barButtonItem8
             // 
             this.barButtonItem8.Caption = "تقارير المبيعات";
             this.barButtonItem8.Id = 6;
-            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             // 
             // barButtonItem9
             // 
             this.barButtonItem9.Caption = "تقارير مردود المبيعات";
             this.barButtonItem9.Id = 7;
-            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
             this.barButtonItem9.Name = "barButtonItem9";
             // 
             // barButtonItem10
@@ -288,80 +273,66 @@
             // 
             this.barButtonItem12.Caption = "فاتورة مرتجع مشتريات جديدة";
             this.barButtonItem12.Id = 10;
-            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
             this.barButtonItem12.Name = "barButtonItem12";
             // 
             // barButtonItem13
             // 
             this.barButtonItem13.Caption = "فواتير مردود المشتريات السابفة";
             this.barButtonItem13.Id = 11;
-            this.barButtonItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.barButtonItem13.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
             this.barButtonItem13.Name = "barButtonItem13";
             // 
             // barButtonItem14
             // 
             this.barButtonItem14.Caption = "تقارير المشتريات";
             this.barButtonItem14.Id = 12;
-            this.barButtonItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
-            this.barButtonItem14.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
             this.barButtonItem14.Name = "barButtonItem14";
             // 
             // barButtonItem15
             // 
             this.barButtonItem15.Caption = "تقارير مردود المشتريات";
             this.barButtonItem15.Id = 13;
-            this.barButtonItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.Image")));
-            this.barButtonItem15.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.LargeImage")));
             this.barButtonItem15.Name = "barButtonItem15";
             // 
-            // barButtonItem16
+            // btnDeposition
             // 
-            this.barButtonItem16.Caption = "سند قبض";
-            this.barButtonItem16.Id = 14;
-            this.barButtonItem16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.Image")));
-            this.barButtonItem16.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.LargeImage")));
-            this.barButtonItem16.Name = "barButtonItem16";
+            this.btnDeposition.Caption = "سند قبض";
+            this.btnDeposition.Id = 14;
+            this.btnDeposition.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeposition.ImageOptions.Image")));
+            this.btnDeposition.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDeposition.ImageOptions.LargeImage")));
+            this.btnDeposition.Name = "btnDeposition";
+            this.btnDeposition.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeposition_ItemClick);
             // 
             // barButtonItem17
             // 
             this.barButtonItem17.Caption = "سندات القبض السابقة";
             this.barButtonItem17.Id = 15;
-            this.barButtonItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.Image")));
-            this.barButtonItem17.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.LargeImage")));
             this.barButtonItem17.Name = "barButtonItem17";
             // 
-            // barButtonItem18
+            // btnPayment
             // 
-            this.barButtonItem18.Caption = "سند صرف";
-            this.barButtonItem18.Id = 16;
-            this.barButtonItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
-            this.barButtonItem18.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
-            this.barButtonItem18.Name = "barButtonItem18";
+            this.btnPayment.Caption = "سند صرف";
+            this.btnPayment.Id = 16;
+            this.btnPayment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPayment.ImageOptions.Image")));
+            this.btnPayment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPayment.ImageOptions.LargeImage")));
+            this.btnPayment.Name = "btnPayment";
+            this.btnPayment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPayment_ItemClick);
             // 
             // barButtonItem19
             // 
             this.barButtonItem19.Caption = "سندات الصرف السابقة";
             this.barButtonItem19.Id = 17;
-            this.barButtonItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.Image")));
-            this.barButtonItem19.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.LargeImage")));
             this.barButtonItem19.Name = "barButtonItem19";
             // 
             // barButtonItem20
             // 
             this.barButtonItem20.Caption = "تقارير القبض";
             this.barButtonItem20.Id = 18;
-            this.barButtonItem20.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.Image")));
-            this.barButtonItem20.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.LargeImage")));
             this.barButtonItem20.Name = "barButtonItem20";
             // 
             // barButtonItem21
             // 
             this.barButtonItem21.Caption = "تقارير السندات والقيود";
             this.barButtonItem21.Id = 19;
-            this.barButtonItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.ImageOptions.Image")));
-            this.barButtonItem21.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.ImageOptions.LargeImage")));
             this.barButtonItem21.Name = "barButtonItem21";
             // 
             // btnItems
@@ -377,88 +348,78 @@
             // 
             this.barButtonItem23.Caption = "المخزون";
             this.barButtonItem23.Id = 21;
-            this.barButtonItem23.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.ImageOptions.Image")));
-            this.barButtonItem23.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.ImageOptions.LargeImage")));
             this.barButtonItem23.Name = "barButtonItem23";
             // 
             // barButtonItem24
             // 
             this.barButtonItem24.Caption = "وحدات الأصناف";
             this.barButtonItem24.Id = 22;
-            this.barButtonItem24.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem24.ImageOptions.Image")));
-            this.barButtonItem24.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem24.ImageOptions.LargeImage")));
             this.barButtonItem24.Name = "barButtonItem24";
             // 
-            // barButtonItem25
+            // btnStores
             // 
-            this.barButtonItem25.Caption = "إدارة المخازن";
-            this.barButtonItem25.Id = 23;
-            this.barButtonItem25.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.Image")));
-            this.barButtonItem25.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.LargeImage")));
-            this.barButtonItem25.Name = "barButtonItem25";
+            this.btnStores.Caption = "إدارة المخازن";
+            this.btnStores.Id = 23;
+            this.btnStores.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.Image")));
+            this.btnStores.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.LargeImage")));
+            this.btnStores.Name = "btnStores";
+            this.btnStores.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStores_ItemClick);
             // 
             // barButtonItem26
             // 
             this.barButtonItem26.Caption = "تقارير الأصناف";
             this.barButtonItem26.Id = 24;
-            this.barButtonItem26.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.Image")));
-            this.barButtonItem26.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.LargeImage")));
             this.barButtonItem26.Name = "barButtonItem26";
             // 
             // barButtonItem27
             // 
             this.barButtonItem27.Caption = "تقارير المخزون";
             this.barButtonItem27.Id = 25;
-            this.barButtonItem27.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem27.ImageOptions.Image")));
-            this.barButtonItem27.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem27.ImageOptions.LargeImage")));
             this.barButtonItem27.Name = "barButtonItem27";
             // 
-            // barButtonItem28
+            // btnAccounts
             // 
-            this.barButtonItem28.Caption = "حساب جديد";
-            this.barButtonItem28.Id = 26;
-            this.barButtonItem28.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.Image")));
-            this.barButtonItem28.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.LargeImage")));
-            this.barButtonItem28.Name = "barButtonItem28";
+            this.btnAccounts.Caption = "حساب جديد";
+            this.btnAccounts.Id = 26;
+            this.btnAccounts.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAccounts.ImageOptions.Image")));
+            this.btnAccounts.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnAccounts.ImageOptions.LargeImage")));
+            this.btnAccounts.Name = "btnAccounts";
+            this.btnAccounts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAccounts_ItemClick);
             // 
-            // barButtonItem29
+            // btnPrimaryAccounts
             // 
-            this.barButtonItem29.Caption = "الحسابات الرئيسية";
-            this.barButtonItem29.Id = 27;
-            this.barButtonItem29.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.Image")));
-            this.barButtonItem29.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.LargeImage")));
-            this.barButtonItem29.Name = "barButtonItem29";
+            this.btnPrimaryAccounts.Caption = "الحسابات الرئيسية";
+            this.btnPrimaryAccounts.Id = 27;
+            this.btnPrimaryAccounts.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrimaryAccounts.ImageOptions.Image")));
+            this.btnPrimaryAccounts.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPrimaryAccounts.ImageOptions.LargeImage")));
+            this.btnPrimaryAccounts.Name = "btnPrimaryAccounts";
+            this.btnPrimaryAccounts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem29_ItemClick);
             // 
             // barButtonItem30
             // 
             this.barButtonItem30.Caption = "كشف حساب";
             this.barButtonItem30.Id = 28;
-            this.barButtonItem30.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.ImageOptions.Image")));
-            this.barButtonItem30.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.ImageOptions.LargeImage")));
             this.barButtonItem30.Name = "barButtonItem30";
             // 
             // barButtonItem31
             // 
             this.barButtonItem31.Caption = "اليومية العامة";
             this.barButtonItem31.Id = 29;
-            this.barButtonItem31.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.ImageOptions.Image")));
-            this.barButtonItem31.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.ImageOptions.LargeImage")));
             this.barButtonItem31.Name = "barButtonItem31";
             // 
-            // barButtonItem32
+            // btnCashbooks
             // 
-            this.barButtonItem32.Caption = "صندوق جديد";
-            this.barButtonItem32.Id = 30;
-            this.barButtonItem32.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem32.ImageOptions.Image")));
-            this.barButtonItem32.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem32.ImageOptions.LargeImage")));
-            this.barButtonItem32.Name = "barButtonItem32";
+            this.btnCashbooks.Caption = "صندوق جديد";
+            this.btnCashbooks.Id = 30;
+            this.btnCashbooks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCashbooks.ImageOptions.Image")));
+            this.btnCashbooks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCashbooks.ImageOptions.LargeImage")));
+            this.btnCashbooks.Name = "btnCashbooks";
+            this.btnCashbooks.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCashbooks_ItemClick);
             // 
             // barButtonItem33
             // 
             this.barButtonItem33.Caption = "تحويل رصيد بين الصناديق";
             this.barButtonItem33.Id = 31;
-            this.barButtonItem33.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem33.ImageOptions.Image")));
-            this.barButtonItem33.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem33.ImageOptions.LargeImage")));
             this.barButtonItem33.Name = "barButtonItem33";
             // 
             // barButtonItem34
@@ -471,209 +432,166 @@
             // 
             this.barButtonItem35.Caption = "حركة الصندوق";
             this.barButtonItem35.Id = 33;
-            this.barButtonItem35.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.Image")));
-            this.barButtonItem35.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.LargeImage")));
             this.barButtonItem35.Name = "barButtonItem35";
             // 
             // barButtonItem36
             // 
             this.barButtonItem36.Caption = "الأقسام والإدارات";
             this.barButtonItem36.Id = 34;
-            this.barButtonItem36.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.Image")));
-            this.barButtonItem36.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.LargeImage")));
             this.barButtonItem36.Name = "barButtonItem36";
             // 
             // barButtonItem37
             // 
             this.barButtonItem37.Caption = "الرواتب";
             this.barButtonItem37.Id = 35;
-            this.barButtonItem37.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.Image")));
-            this.barButtonItem37.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
             this.barButtonItem37.Name = "barButtonItem37";
             // 
             // barButtonItem38
             // 
             this.barButtonItem38.Caption = "الإضافي";
             this.barButtonItem38.Id = 36;
-            this.barButtonItem38.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.Image")));
-            this.barButtonItem38.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.LargeImage")));
             this.barButtonItem38.Name = "barButtonItem38";
             // 
             // barButtonItem39
             // 
             this.barButtonItem39.Caption = "الإجازات";
             this.barButtonItem39.Id = 37;
-            this.barButtonItem39.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem39.ImageOptions.Image")));
-            this.barButtonItem39.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem39.ImageOptions.LargeImage")));
             this.barButtonItem39.Name = "barButtonItem39";
             // 
             // barButtonItem40
             // 
             this.barButtonItem40.Caption = "الحضور والإنصراف";
             this.barButtonItem40.Id = 38;
-            this.barButtonItem40.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem40.ImageOptions.Image")));
-            this.barButtonItem40.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem40.ImageOptions.LargeImage")));
             this.barButtonItem40.Name = "barButtonItem40";
             // 
             // barButtonItem41
             // 
             this.barButtonItem41.Caption = "الورديات";
             this.barButtonItem41.Id = 39;
-            this.barButtonItem41.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem41.ImageOptions.Image")));
-            this.barButtonItem41.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem41.ImageOptions.LargeImage")));
             this.barButtonItem41.Name = "barButtonItem41";
             // 
             // barButtonItem42
             // 
             this.barButtonItem42.Caption = "كشف الرواتب";
             this.barButtonItem42.Id = 40;
-            this.barButtonItem42.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem42.ImageOptions.Image")));
-            this.barButtonItem42.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem42.ImageOptions.LargeImage")));
             this.barButtonItem42.Name = "barButtonItem42";
             // 
             // barButtonItem43
             // 
             this.barButtonItem43.Caption = "تقرير موظف";
             this.barButtonItem43.Id = 41;
-            this.barButtonItem43.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem43.ImageOptions.Image")));
-            this.barButtonItem43.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem43.ImageOptions.LargeImage")));
             this.barButtonItem43.Name = "barButtonItem43";
             // 
             // barButtonItem44
             // 
             this.barButtonItem44.Caption = "تقارير الأقسام";
             this.barButtonItem44.Id = 42;
-            this.barButtonItem44.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem44.ImageOptions.Image")));
-            this.barButtonItem44.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem44.ImageOptions.LargeImage")));
             this.barButtonItem44.Name = "barButtonItem44";
             // 
             // barButtonItem45
             // 
             this.barButtonItem45.Caption = "حسابات المستخدمين";
             this.barButtonItem45.Id = 43;
-            this.barButtonItem45.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem45.ImageOptions.Image")));
-            this.barButtonItem45.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem45.ImageOptions.LargeImage")));
             this.barButtonItem45.Name = "barButtonItem45";
             // 
             // barButtonItem46
             // 
             this.barButtonItem46.Caption = "الصلاحيات";
             this.barButtonItem46.Id = 44;
-            this.barButtonItem46.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem46.ImageOptions.Image")));
-            this.barButtonItem46.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem46.ImageOptions.LargeImage")));
             this.barButtonItem46.Name = "barButtonItem46";
             // 
             // barButtonItem47
             // 
             this.barButtonItem47.Caption = "حركات المستخدمين";
             this.barButtonItem47.Id = 45;
-            this.barButtonItem47.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem47.ImageOptions.Image")));
-            this.barButtonItem47.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem47.ImageOptions.LargeImage")));
             this.barButtonItem47.Name = "barButtonItem47";
             // 
             // barButtonItem48
             // 
             this.barButtonItem48.Caption = "تنبيهات المبيعات";
             this.barButtonItem48.Id = 46;
-            this.barButtonItem48.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem48.ImageOptions.Image")));
-            this.barButtonItem48.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem48.ImageOptions.LargeImage")));
             this.barButtonItem48.Name = "barButtonItem48";
             // 
             // barButtonItem49
             // 
             this.barButtonItem49.Caption = "تنبيهات المشتريات";
             this.barButtonItem49.Id = 47;
-            this.barButtonItem49.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem49.ImageOptions.Image")));
-            this.barButtonItem49.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem49.ImageOptions.LargeImage")));
             this.barButtonItem49.Name = "barButtonItem49";
             // 
             // barButtonItem50
             // 
             this.barButtonItem50.Caption = "تنبيهات المخازن";
             this.barButtonItem50.Id = 48;
-            this.barButtonItem50.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem50.ImageOptions.Image")));
-            this.barButtonItem50.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem50.ImageOptions.LargeImage")));
             this.barButtonItem50.Name = "barButtonItem50";
             // 
             // barButtonItem51
             // 
             this.barButtonItem51.Caption = "تنبيهات الأصناف";
             this.barButtonItem51.Id = 49;
-            this.barButtonItem51.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem51.ImageOptions.Image")));
-            this.barButtonItem51.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem51.ImageOptions.LargeImage")));
             this.barButtonItem51.Name = "barButtonItem51";
             // 
             // barButtonItem52
             // 
             this.barButtonItem52.Caption = "تنبيهات الموظفين";
             this.barButtonItem52.Id = 50;
-            this.barButtonItem52.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem52.ImageOptions.Image")));
-            this.barButtonItem52.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem52.ImageOptions.LargeImage")));
             this.barButtonItem52.Name = "barButtonItem52";
             // 
             // barButtonItem53
             // 
             this.barButtonItem53.Caption = "تنبيهات الحسابات";
             this.barButtonItem53.Id = 51;
-            this.barButtonItem53.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem53.ImageOptions.Image")));
-            this.barButtonItem53.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem53.ImageOptions.LargeImage")));
             this.barButtonItem53.Name = "barButtonItem53";
             // 
             // barButtonItem54
             // 
             this.barButtonItem54.Caption = "تنبيهات الأصول";
             this.barButtonItem54.Id = 52;
-            this.barButtonItem54.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem54.ImageOptions.Image")));
-            this.barButtonItem54.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem54.ImageOptions.LargeImage")));
             this.barButtonItem54.Name = "barButtonItem54";
             // 
             // barButtonItem55
             // 
             this.barButtonItem55.Caption = "تنبيهات المستخدمين";
             this.barButtonItem55.Id = 53;
-            this.barButtonItem55.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem55.ImageOptions.Image")));
-            this.barButtonItem55.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem55.ImageOptions.LargeImage")));
             this.barButtonItem55.Name = "barButtonItem55";
             // 
             // barButtonItem56
             // 
             this.barButtonItem56.Caption = "الأصول";
             this.barButtonItem56.Id = 54;
-            this.barButtonItem56.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem56.ImageOptions.Image")));
-            this.barButtonItem56.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem56.ImageOptions.LargeImage")));
             this.barButtonItem56.Name = "barButtonItem56";
             // 
             // barButtonItem57
             // 
             this.barButtonItem57.Caption = "الإهلاكات";
             this.barButtonItem57.Id = 55;
-            this.barButtonItem57.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem57.ImageOptions.Image")));
-            this.barButtonItem57.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem57.ImageOptions.LargeImage")));
             this.barButtonItem57.Name = "barButtonItem57";
             // 
             // barButtonItem58
             // 
             this.barButtonItem58.Caption = "تقارير الأصول";
             this.barButtonItem58.Id = 56;
-            this.barButtonItem58.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem58.ImageOptions.Image")));
-            this.barButtonItem58.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem58.ImageOptions.LargeImage")));
             this.barButtonItem58.Name = "barButtonItem58";
             // 
             // barButtonItem59
             // 
             this.barButtonItem59.Caption = "تقارير الإهلاكات";
             this.barButtonItem59.Id = 57;
-            this.barButtonItem59.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem59.ImageOptions.Image")));
-            this.barButtonItem59.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem59.ImageOptions.LargeImage")));
             this.barButtonItem59.Name = "barButtonItem59";
             // 
             // barButtonItem60
             // 
             this.barButtonItem60.Caption = "إضافة قيد";
             this.barButtonItem60.Id = 58;
-            this.barButtonItem60.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem60.ImageOptions.Image")));
-            this.barButtonItem60.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem60.ImageOptions.LargeImage")));
             this.barButtonItem60.Name = "barButtonItem60";
+            // 
+            // btnCurrencies
+            // 
+            this.btnCurrencies.Caption = "العملات";
+            this.btnCurrencies.Id = 59;
+            this.btnCurrencies.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCurrencies.ImageOptions.Image")));
+            this.btnCurrencies.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCurrencies.ImageOptions.LargeImage")));
+            this.btnCurrencies.Name = "btnCurrencies";
+            this.btnCurrencies.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCurrencies_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -681,7 +599,6 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup8,
             this.ribbonPageGroup9});
-            this.ribbonPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "المبيعات";
             // 
@@ -712,7 +629,6 @@
             this.ribbonPageGroup2,
             this.ribbonPageGroup15,
             this.ribbonPageGroup16});
-            this.ribbonPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "المشتريات";
             // 
@@ -743,14 +659,13 @@
             this.ribbonPageGroup19,
             this.ribbonPageGroup3,
             this.ribbonPageGroup20});
-            this.ribbonPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
             this.ribbonPage3.Name = "ribbonPage3";
             this.ribbonPage3.Text = "المخازن";
             // 
             // ribbonPageGroup19
             // 
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem23);
-            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem25);
+            this.ribbonPageGroup19.ItemLinks.Add(this.btnStores);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
             this.ribbonPageGroup19.Text = "المخزون";
             // 
@@ -776,23 +691,22 @@
             this.ribbonPageGroup25,
             this.ribbonPageGroup23,
             this.ribbonPageGroup22});
-            this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "الحسابات";
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem28);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnAccounts);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnPrimaryAccounts);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "الحسابات";
             // 
             // ribbonPageGroup26
             // 
             this.ribbonPageGroup26.AllowTextClipping = false;
-            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem16);
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnDeposition);
             this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem17);
-            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem18);
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnPayment);
             this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem19);
             this.ribbonPageGroup26.Name = "ribbonPageGroup26";
             this.ribbonPageGroup26.Text = "السندات";
@@ -806,7 +720,7 @@
             // 
             // ribbonPageGroup23
             // 
-            this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem32);
+            this.ribbonPageGroup23.ItemLinks.Add(this.btnCashbooks);
             this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem33);
             this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             this.ribbonPageGroup23.Text = "الصناديق";
@@ -825,7 +739,6 @@
             this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup12,
             this.ribbonPageGroup10});
-            this.ribbonPage10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage10.ImageOptions.Image")));
             this.ribbonPage10.Name = "ribbonPage10";
             this.ribbonPage10.Text = "الموظفين";
             // 
@@ -853,7 +766,6 @@
             this.ribbonPage7.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup7,
             this.ribbonPageGroup24});
-            this.ribbonPage7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage7.ImageOptions.Image")));
             this.ribbonPage7.Name = "ribbonPage7";
             this.ribbonPage7.Text = "المستخدمين";
             // 
@@ -875,7 +787,6 @@
             this.ribbonPage9.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup11,
             this.ribbonPageGroup14});
-            this.ribbonPage9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage9.ImageOptions.Image")));
             this.ribbonPage9.Name = "ribbonPage9";
             this.ribbonPage9.Text = "الأصول";
             // 
@@ -897,7 +808,6 @@
             // 
             this.ribbonPage13.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup21});
-            this.ribbonPage13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage13.ImageOptions.Image")));
             this.ribbonPage13.Name = "ribbonPage13";
             this.ribbonPage13.Text = "التنبيهات";
             // 
@@ -918,13 +828,12 @@
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpg});
-            this.ribbonPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.ImageOptions.Image")));
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "التهيئة";
             // 
             // rpg
             // 
-            this.rpg.ItemLinks.Add(this.btnInitCurrency);
+            this.rpg.ItemLinks.Add(this.btnCurrencies);
             this.rpg.Name = "rpg";
             this.rpg.Text = "النظام المحاسبي";
             // 
@@ -932,7 +841,6 @@
             // 
             this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup6});
-            this.ribbonPage6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage6.ImageOptions.Image")));
             this.ribbonPage6.Name = "ribbonPage6";
             // 
             // ribbonPageGroup6
@@ -948,37 +856,17 @@
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(1032, 31);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(-30, -22);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // barButtonItem5
             // 
             this.barButtonItem5.Caption = "الفواتير السابقة";
             this.barButtonItem5.Id = 2;
-            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
             this.barButtonItem5.Name = "barButtonItem5";
             // 
             // barButtonItem6
             // 
             this.barButtonItem6.Caption = "الفواتير السابقة";
             this.barButtonItem6.Id = 2;
-            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
             this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // btnInitCurrency
-            // 
-            this.btnInitCurrency.Caption = "العملات";
-            this.btnInitCurrency.Id = 59;
-            this.btnInitCurrency.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInitCurrency.ImageOptions.Image")));
-            this.btnInitCurrency.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnInitCurrency.ImageOptions.LargeImage")));
-            this.btnInitCurrency.Name = "btnInitCurrency";
             // 
             // frmMain
             // 
@@ -986,11 +874,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 740);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Ribbon = this.ribbon;
@@ -1000,6 +886,7 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Simple Soft for Systems and Technology - China";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1024,7 +911,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpg;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private System.Windows.Forms.Button button1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
@@ -1048,9 +934,9 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarButtonItem btnDeposition;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
+        private DevExpress.XtraBars.BarButtonItem btnPayment;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
         private DevExpress.XtraBars.BarButtonItem barButtonItem21;
@@ -1058,18 +944,18 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem23;
         private DevExpress.XtraBars.BarButtonItem barButtonItem24;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem25;
+        private DevExpress.XtraBars.BarButtonItem btnStores;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
         private DevExpress.XtraBars.BarButtonItem barButtonItem26;
         private DevExpress.XtraBars.BarButtonItem barButtonItem27;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage13;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem28;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem29;
+        private DevExpress.XtraBars.BarButtonItem btnAccounts;
+        private DevExpress.XtraBars.BarButtonItem btnPrimaryAccounts;
         private DevExpress.XtraBars.BarButtonItem barButtonItem30;
         private DevExpress.XtraBars.BarButtonItem barButtonItem31;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem32;
+        private DevExpress.XtraBars.BarButtonItem btnCashbooks;
         private DevExpress.XtraBars.BarButtonItem barButtonItem33;
         private DevExpress.XtraBars.BarButtonItem barButtonItem34;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
@@ -1104,6 +990,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem60;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup26;
-        private DevExpress.XtraBars.BarButtonItem btnInitCurrency;
+        private DevExpress.XtraBars.BarButtonItem btnCurrencies;
     }
 }

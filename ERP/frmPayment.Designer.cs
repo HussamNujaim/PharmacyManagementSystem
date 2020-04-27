@@ -1,6 +1,6 @@
 ﻿namespace ERP
 {
-    partial class frmDeposition
+    partial class frmPayment
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDeposition));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPayment));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lblPalance = new System.Windows.Forms.Label();
             this.txtArabic = new System.Windows.Forms.TextBox();
@@ -105,7 +105,7 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(573, 414);
             this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "بيانات سند القبض";
+            this.groupControl1.Text = "بيانات سند الصرف";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
             // lblPalance
@@ -307,9 +307,9 @@
             this.labelControl1.Location = new System.Drawing.Point(444, 146);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(103, 19);
+            this.labelControl1.Size = new System.Drawing.Size(97, 19);
             this.labelControl1.TabIndex = 12;
-            this.labelControl1.Text = "المبلغ المقبوض";
+            this.labelControl1.Text = "المبلغ المدفوع";
             // 
             // txtId
             // 
@@ -341,9 +341,9 @@
             this.labelControl4.Location = new System.Drawing.Point(444, 183);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(78, 19);
+            this.labelControl4.Size = new System.Drawing.Size(73, 19);
             this.labelControl4.TabIndex = 12;
-            this.labelControl4.Text = "إلى صندوق";
+            this.labelControl4.Text = "من صندوق";
             // 
             // labelControl2
             // 
@@ -363,9 +363,9 @@
             this.labelControl3.Location = new System.Drawing.Point(444, 110);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(71, 19);
+            this.labelControl3.Size = new System.Drawing.Size(76, 19);
             this.labelControl3.TabIndex = 12;
-            this.labelControl3.Text = "من حساب";
+            this.labelControl3.Text = "إلى حساب";
             // 
             // txtLastPalance
             // 
@@ -431,19 +431,19 @@
             // 
             this.get_CashbooksTableAdapter.ClearBeforeFill = true;
             // 
-            // frmDeposition
+            // frmPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 421);
             this.Controls.Add(this.groupControl1);
             this.MaximizeBox = false;
-            this.Name = "frmDeposition";
+            this.Name = "frmPayment";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "سند قبض";
-            this.Load += new System.EventHandler(this.frmDeposition_Load);
+            this.Text = "سند صرف";
+            this.Load += new System.EventHandler(this.frmPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

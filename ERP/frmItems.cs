@@ -171,7 +171,7 @@ namespace ERP
                                 decimal newPrice = decimal.Parse(txtPurchasePrice.Text) / decimal.Parse(unitQty);
 
                                 if (iQty > 0)
-                                    store.Add_Store(int.Parse(MaxItemID), iQty, newPrice, DAL);
+                                    store.Add_ItemToStore(int.Parse(MaxItemID), iQty, newPrice, DAL);
 
                                 //////////////////
                                 transaction.Commit(); con.Close();

@@ -74,11 +74,23 @@
     <Compile Include="frmAccounts.Designer.cs">
       <DependentUpon>frmAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStores.Designer.cs">
+      <DependentUpon>frmStores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCashbooks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCashbooks.Designer.cs">
       <DependentUpon>frmCashbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDeposition.cs">
       <SubType>Form</SubType>
@@ -146,6 +158,9 @@
     <EmbeddedResource Include="frmAccounts.resx">
       <DependentUpon>frmAccounts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmStores.resx">
+      <DependentUpon>frmStores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCashbooks.resx">
       <DependentUpon>frmCashbooks.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,11 +168,17 @@
       <DependentUpon>frmCurrency.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDeposition.resx">
       <DependentUpon>frmDeposition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmItems.resx">
       <DependentUpon>frmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrimaryAccounts.resx">
       <DependentUpon>frmPrimaryAccounts.cs</DependentUpon>

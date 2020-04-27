@@ -97,6 +97,14 @@ namespace ERP.Presentation
             return s;
         }
 
+        public string Get_Max_BoundPaymentId(string Type, DataLayer.DataLayer DataLayer)
+        {
+            SqlParameter[] para = new SqlParameter[1];
+            para[0] = new SqlParameter("@Type", SqlDbType.NVarChar, 50);
+            para[0].Value = Type;
+            return DataLayer.SelectDataS_offline("SELECT isnull (MAX(convert(int,[Id])),0) from  [dbo].[BoundPayment] WHERE [Type]=@Type", para);
+        }
+
         public string Get_Max_BoundPaymentId(string Type)
         {
             DataLayer.DataLayer DataLayer = new DataLayer.DataLayer();

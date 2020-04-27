@@ -13,7 +13,7 @@ using System.Configuration;
 
 namespace ERP
 {
-    public partial class frmDeposition : DevExpress.XtraEditors.XtraForm
+    public partial class frmPayment : DevExpress.XtraEditors.XtraForm
     {
         Presentation.CLS_Accounts acc = new Presentation.CLS_Accounts();
         Presentation.CLS_Bounds bound = new Presentation.CLS_Bounds();
@@ -22,12 +22,12 @@ namespace ERP
 
         string UserName="Admin";
         List<CurrencyInfo> currencies = new List<CurrencyInfo>();
-        public frmDeposition()
+        public frmPayment()
         {
             InitializeComponent();
         }
 
-        private void frmDeposition_Load(object sender, EventArgs e)
+        private void frmPayment_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'storesDataSet.Get_Cashbooks' table. You can move, or remove it, as needed.
             this.get_CashbooksTableAdapter.Fill(this.storesDataSet.Get_Cashbooks);
@@ -48,7 +48,7 @@ namespace ERP
 
         private string GetMaxId()
         {
-            string id = bound.Get_Max_BoundId("سند قبض");
+            string id = bound.Get_Max_BoundPaymentId("سند صرف");
             int boundId = 1;
             if (id != null)
             {
@@ -79,7 +79,7 @@ namespace ERP
                 DataTable dtAcc = acc.Get_SecondaryAccount(cmbSecondaryAcc.EditValue.ToString());
                 if (dtCash.Rows[0][4].ToString() != dtAcc.Rows[0][6].ToString())
                 {
-                    DAL.ShowMessageBox("عذراً .. لايمكن توريد المبلغ إلى هذا الصندوق, بسبب اختلاف العملة", "Error");
+                    DAL.ShowMessageBox("عذراً .. لايمكن سحب المبلغ من هذا الصندوق, بسبب اختلاف العملة", "Error");
                     return;
                 }
                 //
@@ -93,16 +93,16 @@ namespace ERP
                 try
                 {
                     DataLayer.DataLayer DAL = new DataLayer.DataLayer(transaction, con);
-                    string boundId = (int.Parse(bound.Get_Max_BoundId("سند قبض", DAL)) + 1).ToString();
-                    bound.Add_Bound(boundId.ToString(), "سند قبض", cmbSecondaryAcc.EditValue.ToString(), decimal.Parse(txtPalance.Text), cmbDetails.Text, dtp.EditValue.ToString(), "", UserName, int.Parse(cmbCashbook.EditValue.ToString()), DAL);
+                    string boundId = (int.Parse(bound.Get_Max_BoundPaymentId("سند صرف", DAL)) + 1).ToString();
+                    bound.Add_BoundPayment(boundId.ToString(), "سند صرف", cmbSecondaryAcc.EditValue.ToString(), decimal.Parse(txtPalance.Text), cmbDetails.Text, dtp.EditValue.ToString(), "", UserName, int.Parse(cmbCashbook.EditValue.ToString()), DAL);
                     //////////////// Account
                     DataTable dt = acc.Get_SecondaryAccount(cmbSecondaryAcc.EditValue.ToString(), DAL);
                     decimal palance = decimal.Parse(dt.Rows[0][4].ToString()) - decimal.Parse(dt.Rows[0][3].ToString());
-                    decimal dain = decimal.Parse(txtPalance.Text);
-                    decimal madin = 0;
+                    decimal dain = 0;
+                    decimal madin = decimal.Parse(txtPalance.Text);
                     palance = palance + madin - dain;
                     //add AccReport
-                    acc.Add_AccountsReport(cmbSecondaryAcc.EditValue.ToString(), "سند قبض", int.Parse(boundId), dtp.EditValue.ToString(), cmbDetails.Text, dain, madin, palance, DAL);
+                    acc.Add_AccountsReport(cmbSecondaryAcc.EditValue.ToString(), "سند صرف", int.Parse(boundId), dtp.EditValue.ToString(), cmbDetails.Text, dain, madin, palance, DAL);
                     // Edit Accounts Table
                     acc.Edit_SecondaryAccount(dt.Rows[0][0].ToString(), decimal.Parse(dt.Rows[0][3].ToString()) + dain, decimal.Parse(dt.Rows[0][4].ToString()) + madin, DAL);
 
@@ -110,10 +110,10 @@ namespace ERP
                     DataTable cashbook = cash.Get_Cashbook(int.Parse(cmbCashbook.EditValue.ToString()), DAL); // get cashbook .
                     int cashbookId = int.Parse(cashbook.Rows[0][0].ToString());
                     decimal cashPalance = decimal.Parse(cashbook.Rows[0][3].ToString());
-                    cashPalance = cashPalance + decimal.Parse(txtPalance.Text);
+                    cashPalance = cashPalance - decimal.Parse(txtPalance.Text);
                     //
-                    cash.Add_CashbookReport(cashbookId, "سند قبض", int.Parse(boundId), dtp.EditValue.ToString(),
-                        cmbSecondaryAcc.Text + " : " + cmbDetails.Text, 0, decimal.Parse(txtPalance.Text), DAL);
+                    cash.Add_CashbookReport(cashbookId, "سند صرف", int.Parse(boundId), dtp.EditValue.ToString(),
+                        cmbSecondaryAcc.Text + " : " + cmbDetails.Text, decimal.Parse(txtPalance.Text), 0, DAL);
                     cash.Edit_Cashbook(cashbookId, cashPalance, DAL);
                     //////////////////////////Receiver 
                     //    acc.Add_ReceiversReport("", "سند قبض", int.Parse(txtBoundId.Text), dtp.Value.ToShortDateString(), "من: " + cmbSecondaryAcc.Text, 0, decimal.Parse(txtPalance.Text), DAL);

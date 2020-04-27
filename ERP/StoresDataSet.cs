@@ -4,6 +4,10 @@
 
     partial class StoresDataSet
     {
+        partial class Get_CashbokDataTable
+        {
+        }
+
         partial class Get_CurrenciesDataTable
         {
         }
